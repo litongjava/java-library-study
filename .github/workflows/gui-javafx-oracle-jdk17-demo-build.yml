@@ -2,9 +2,9 @@ name: Java CI with Maven and Java FX
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master","main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [  "master","main" ]
 
 jobs:
   build_windows:
