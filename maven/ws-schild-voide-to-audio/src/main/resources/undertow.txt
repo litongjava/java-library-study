@@ -1,0 +1,10 @@
+undertow.devMode=true
+undertow.port=11020
+undertow.host=127.0.0.1
+undertow.contextPath=/video-to-text
+undertow.resourcePath = 
+#jdbc-mysql
+jdbc.url=jdbc:sqlite:D:/sqllite/java-se-ws-schild-voide-to-audio.db 
+jdbc.user=
+jdbc.pswd=
+jdbc.showSql=true
