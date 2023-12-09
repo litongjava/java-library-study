@@ -19,6 +19,18 @@ jobs:
           distribution: 'graalvm'
           cache: maven
 
+      - name: Install GraalVM
+          run: |
+            curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-[graalvm-version]/graalvm-ce-java[version]-linux-amd64-[graalvm-version].tar.gz -o graalvm.tar.gz
+            tar -xzf graalvm.tar.gz
+            echo "$PWD/graalvm-ce-java[version]-[graalvm-version]/bin" >> $GITHUB_PATH
+
+      - name: Configure GraalVM
+        run: |
+          gu install native-image
+
+      - name: chage to project path
+        run: cd maven\gui-javafx-oracle-jdk17-demo
 
       - name: Install maven wrapper
         run: |
