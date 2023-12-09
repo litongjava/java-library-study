@@ -1,13 +1,13 @@
 
 package com.litongjava.demo;
 
+import java.net.URL;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.net.URL;
 
 public class Main extends Application {
 
@@ -30,4 +30,3 @@ public class Main extends Application {
     launch(args);
   }
 }
-
